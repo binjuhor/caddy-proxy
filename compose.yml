@@ -1,0 +1,15 @@
+services:
+  caddy:
+    build: .
+    container_name: caddy-proxy
+    ports:
+      - "3128:3128"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+    restart: unless-stopped
+
+volumes:
+  caddy_data:
+  caddy_config:

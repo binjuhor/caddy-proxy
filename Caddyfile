@@ -1,7 +1,7 @@
 :3128 {
   route {
     forward_proxy {
-      basic_auth binjuhor kARNEn9GfdFrU77kVN
+      basic_auth user password
       hide_ip
       hide_via
       probe_resistance secret.domain
